@@ -1,0 +1,40 @@
+
+#navlist {
+    position: relative;
+  }
+#navlist li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+}
+#navlist li, #navlist a{
+    height: 44px;
+    display: block;
+}
+#home{
+    left: 0px;
+    background: url(image/img_navsprites.gif) 0 0;
+    width: 134px;
+  
+
+}
+#prev{
+    left: 46px;
+    background: url(image/img_navsprites.gif) -46 0;
+    width: 100px;
+
+}
+#next{
+    left: 89px;
+    background: url(image/img_navsprites.gif) -90 0;
+    width: 100px;
+    
+}
+body{
+    counter-reset: test;
+}
+h3::before{
+    counter-increment: test;
+    content: "web" counter(test);
+}
